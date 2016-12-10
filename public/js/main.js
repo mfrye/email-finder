@@ -30,11 +30,11 @@ function onSubmit(e) {
     url: "/find",
     method: "POST",
     data: JSON.stringify(data),
+    timeout: 20000,
     contentType: "application/json; charset=utf-8",
     dataType: "json",
   })
   .done(function(data) {
-    console.log(data);
 
     // Hide loading screen
     loadingCover.removeClass('show');
