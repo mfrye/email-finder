@@ -40,7 +40,7 @@ function onSubmit(e) {
     loadingCover.removeClass('show');
 
     // Set result
-    $('#result').html('Success! The email is:' + data.email);
+    $('#result').html('Success! The email is: ' + data.email);
   })
   .fail(function (err) {
 
