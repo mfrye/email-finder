@@ -1,0 +1,25 @@
+{
+  "name": "email-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=index node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.2.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.15.2",
+    "csv-parse": "^1.1.7",
+    "debug": "^2.3.3",
+    "ejs": "^2.5.5",
+    "email-existence": "^0.1.5",
+    "express": "^4.14.0",
+    "swig": "^1.4.2"
+  }
+}
