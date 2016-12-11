@@ -14,7 +14,7 @@ function onSubmit(e) {
 
   // Get data from form
   var data = $(e.target).serializeArray().reduce(function(obj, item) {
-    obj[item.name] = item.value.trim();
+    obj[item.name] = item.value.trim().toLowerCase();
     return obj;
   }, {});
 
