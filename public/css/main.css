@@ -2,6 +2,20 @@
   min-height: calc(100vh - 261px);
 }
 
+/* Nav */
+nav img {
+  width: 150px;
+  vertical-align: middle;
+}
+
+nav ul a {
+  color: rgba(0,0,0,0.87);
+}
+
+nav a {
+  color: rgba(0,0,0,0.87);
+}
+
 #email-form {
   position: relative;
 }
