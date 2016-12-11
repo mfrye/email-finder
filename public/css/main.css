@@ -12,13 +12,32 @@ nav ul a {
   color: rgba(0,0,0,0.87);
 }
 
-nav a {
-  color: rgba(0,0,0,0.87);
+.logo {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
+
+/*nav a {
+  color: rgba(0,0,0,0.87);
+}*/
 
 #email-form {
   position: relative;
 }
+
+/* Buttons */
+.btn-round {
+    border-radius: 25px;
+    height: auto;
+}
+
+.btn-gradient {
+    background: #187e9c;
+    background: -webkit-linear-gradient(left,#187e9c,#1ea8d3);
+    background: linear-gradient(90deg,#187e9c 0,#1ea8d3);
+}
+
 
 .loading-cover {
   display: none;

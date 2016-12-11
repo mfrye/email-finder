@@ -1,11 +1,47 @@
 
+/*
+ * Validate the form
+ *
+ * - Check that fields aren't empty, if so add invalid class
+ */
+function validate(data) {
+  var valid = true;
 
-// On result
-function onResult() {
+  for (var key in data) {
+    var input = $("input[name='" + key + "']");
 
+    if (!data[key]) {
+      valid = false;
+      input.addClass('invalid');
+    }
+    else {
+      input.removeClass('invalid');
+    }
+  }
+
+  return valid;
 }
 
-// On submit
+/*
+ * Build data
+ *
+ * - Serialize form and build object
+ */
+function buildData(form) {
+  return $(form).serializeArray().reduce(function(obj, item) {
+    obj[item.name] = item.value.trim();
+
+    if (obj[item.name]) {
+      obj[item.name] = item.value.toLowerCase();
+    }
+
+    return obj;
+  }, {});
+}
+
+/*
+ * On submit handler
+ */
 function onSubmit(e) {
   var loadingCover = $('.loading-cover');
   var result = $('#result');
@@ -13,10 +49,11 @@ function onSubmit(e) {
   e.preventDefault();
 
   // Get data from form
-  var data = $(e.target).serializeArray().reduce(function(obj, item) {
-    obj[item.name] = item.value.trim().toLowerCase();
-    return obj;
-  }, {});
+  var data = buildData(e.target);
+
+  if (!validate(data)) {
+    return
+  }
 
   // Show loading screen
   loadingCover.addClass('show');
@@ -24,7 +61,7 @@ function onSubmit(e) {
   // Clear old result
   result.html('');
 
-  $('#result').html
+  $('#result').html;
 
   $.ajax({
     url: "/find",
@@ -54,6 +91,15 @@ function onSubmit(e) {
   return false;
 }
 
-var form = document.getElementById('email-form');
+/*
+ * Initialize
+ */
+function init() {
+  var form = document.getElementById('email-form');
 
-form.addEventListener('submit', onSubmit);
+  form.addEventListener('submit', onSubmit);
+
+  $(".button-collapse").sideNav();
+}
+
+init();

@@ -4,12 +4,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Email Finder by Big Picture</title>
+        <title>Open-Source Email Finder by Big Picture</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="description" content="Easily find any email address for free!"/>
         <meta property="og:site_name" content="Email Finder"/>
-        <meta property="og:title" content="Email Finder by Big Picture"/>
+        <meta property="og:title" content="Open-Source Email Finder by Big Picture"/>
         <meta property="og:image" content="img/email-finder.png"/>
         <meta property="og:url" content="https://email-finder.herokuapp.com/"/>
         <meta property="og:locale" content="en_US"/>
@@ -17,7 +17,7 @@
         <meta name="og:creator" content="@bigpicturebiz"/>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@bigpicturebiz"/>
-        <meta name="twitter:title" content="Email Finder by Big Picture"/>
+        <meta name="twitter:title" content="Open-Source Email Finder by Big Picture"/>
         <meta name="twitter:description" content="Easily find any email address for free!"/>
         <meta name="twitter:image:src" content="img/email-finder.png"/>
 
@@ -53,17 +53,25 @@
         <![endif]-->
 
         <div class="content">
-          <nav class="white" role="navigation">
+          <nav class="teal" role="navigation">
             <div class="nav-wrapper container">
               <a id="logo-container" href="https://www.thebigpicture.io" target="_blank" class="brand-logo">
-                <img src="img/big-picture-logo-black.png" />
+                <img src="img/big-picture-logo-white.png" />
               </a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="https://www.thebigpicture.io" target="_blank">A Big Picture project</a></li>
+                <li>
+                  <a class="btn" href="https://github.com/mfrye/email-finder" target="_blank">Get the code</a>
+                </li>
               </ul>
 
-              <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
-                <li><a href="https://www.thebigpicture.io" target="_blank">A Big Picture project</a></li>
+              <ul id="nav-mobile" class="side-nav">
+                <li class="logo">
+                  <a id="logo-container" href="https://www.thebigpicture.io" target="_blank">
+                    <img src="img/big-picture-logo-black.png" />
+                  </a>
+                </li>
+                <li><a href="https://github.com/mfrye/email-finder" target="_blank">Get the code</a></li>
+                <li><a href="https://www.thebigpicture.io" target="_blank">Learn more about Big Picture</a></li>
               </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
@@ -86,30 +94,36 @@
             <div class="container">
 
               <div class="row">
-                <form id="email-form" class="col s12">
+                <form id="email-form" class="col s12 l8 push-l2">
 
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="first_name" name="first_name" type="text" class="validate">
+                      <input placeholder="Elon" id="first_name" name="first_name" type="text" class="validate" data-error="Please enter a first name">
                       <label for="first_name">First Name</label>
                     </div>
                     <div class="input-field col s6">
-                      <input id="last_name" name="last_name" type="text" class="validate">
+                      <input placeholder="Musk" id="last_name" name="last_name" type="text" class="validate" data-error="Please enter a last name">
                       <label for="last_name">Last Name</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <input id="domain" name="domain" type="text" class="validate">
+                      <input placeholder="spacex.com" id="domain" name="domain" type="text" class="validate" data-error="Please enter a domain">
                       <label for="domain">Domain</label>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col s12">
-                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                      <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
                         <i class="material-icons right">send</i>
                       </button>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <p class="grey-text">Note: The system works best for work domains and may have difficultly finding personal emails (Gmail, Yahoo, etc).</p>
                     </div>
                   </div>
 
@@ -163,7 +177,16 @@
                 <h5 class="white-text">Connect</h5>
                 <iframe src="https://ghbtns.com/github-btn.html?user=mfrye&amp;repo=email-finder&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
                 <br>
+
                 <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.3748f7cda49448f6c6f7854238570ba0.en.html#dnt=true&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=bigpicturebiz&amp;show_count=true&amp;show_screen_name=true&amp;size=l&amp;time=1481328793269" style="position: static; visibility: visible; width: 283px; height: 28px;" data-screen-name="BigPictureBiz"></iframe>
+
+                <br>
+
+                <!-- Place this tag in your head or just before your close body tag. -->
+                <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+                <!-- Place this tag where you want the widget to render. -->
+                <div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/115692797722886463720" data-rel="publisher"></div>
               </div>
             </div>
           </div>
