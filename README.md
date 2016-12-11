@@ -1,5 +1,7 @@
 # Email Finder
 
+![Email Finder Screenshot](https://email-finder.herokuapp.com/img/email-finder.png)
+
 ## Easily find any email address for free!
 
 This project will enable you to look up the actual email address of any person. All you need is their name and website domain.
