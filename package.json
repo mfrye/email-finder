@@ -1,7 +1,7 @@
 {
   "name": "email-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easily find any email address for free!",
   "main": "index.js",
   "scripts": {
     "start": "DEBUG=index node index.js",
