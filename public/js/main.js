@@ -10,9 +10,12 @@ sessionData = sessionData ? JSON.parse(sessionData) : {submissions: 0, email: fa
  * - Only allow 3 email checks before asking for email
  */
 function checkSession() {
-  if (!sessionData.email && sessionData.submissions >= 3) {
-    $('#modal1').modal('open');
-  }
+  setTimeout(function () {
+    if (!sessionData.email && sessionData.submissions >= 3) {
+      $('#modal1').modal('open');
+    }
+  }, 2000);
+
 }
 
 /*
