@@ -36,7 +36,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
-        <link rel="manifest" href="img/manifest.json"/>
 
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -153,13 +152,24 @@
 
         </div>
 
-        <!-- <footer class="page-footer orange">
-          <div class="footer-copyright">
-            <div class="container">
-            Made by <a class="orange-text text-lighten-3" href="https://www.thebigpicture.io">Big Picture</a>
+        <div id="modal1" class="modal">
+          <form id="email-capture">
+            <div class="modal-content">
+              <h4>We're glad you're finding it useful!</h4>
+              <p>If you'd like to keep using Email Finder, please add your email address.</p>
+
+              <div class="email-input">
+                <div class="input-field">
+                  <input id="email" name="email" type="text" class="validate" data-error="Please enter your email">
+                  <label for="email">Your email address</label>
+                </div>
+              </div>
             </div>
-          </div>
-        </footer> -->
+            <div class="modal-footer">
+              <button type="submit" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</button>
+            </div>
+          </form>
+         </div>
 
         <footer class="page-footer teal">
           <div class="container">

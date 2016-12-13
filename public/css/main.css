@@ -18,12 +18,12 @@ nav ul a {
   margin-bottom: 40px;
 }
 
-/*nav a {
-  color: rgba(0,0,0,0.87);
-}*/
-
 #email-form {
   position: relative;
+}
+
+#email-capture .email-input {
+  margin-top: 40px;
 }
 
 /* Buttons */
