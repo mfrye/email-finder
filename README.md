@@ -12,6 +12,8 @@ Demo: [https://email-finder.herokuapp.com/](https://email-finder.herokuapp.com/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+[![Vote on PH](http://thebigpicture.io/img/ph-vote.png)](https://www.producthunt.com/posts/open-source-email-finder)
+
 
 ## How it works
 At a high level, it basically it takes the name / domain and tries various combinations to find the correct format. For every email combination it attempts to "send an email". As in it waits for a connection to be made, then if successful (the email exists), it then cuts the connection before any data is sent.
